@@ -1,0 +1,99 @@
+unit View.fornecedores;
+
+interface
+
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs,
+  View.base.listas,
+  Data.DB, Vcl.Grids,
+  Vcl.DBGrids,
+  Vcl.StdCtrls,
+  Vcl.WinXCtrls,
+  Vcl.WinXPanels,
+  Vcl.Buttons,
+  Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls,
+  Service.cadastro, Provider.constants, Vcl.Mask, Vcl.DBCtrls;
+
+type
+  TViewFornecedores = class(TViewBaseListas)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    pnlTituloCadCliente: TPanel;
+    lblTituloCadastro: TLabel;
+    edtPES_CODIGO: TDBEdit;
+    edtPES_RAZAO: TDBEdit;
+    edtPES_FANTASIA: TDBEdit;
+    edtPES_TELEFONE: TDBEdit;
+    edtPES_CNPJCPF: TDBEdit;
+    edtPES_IERG: TDBEdit;
+    edtPES_OBSERVACAO: TDBEdit;
+    procedure FormShow(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnExcluirClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewFornecedores: TViewFornecedores;
+
+implementation
+
+{$R *.dfm}
+
+procedure TViewFornecedores.btnCancelarClick(Sender: TObject);
+begin  //CANCELAR
+  inherited;
+  if serviceCadastro.QRY_pessoas.State in dsEditModes then
+  ServiceCadastro.QRY_pessoas.Cancel;
+  CardPanel_Listas.ActiveCard := card_pesquisa;
+end;
+
+procedure TViewFornecedores.btnExcluirClick(Sender: TObject);
+begin//EXCLUIR
+  inherited;
+
+  if ServiceCadastro.QRY_pessoas.RecordCount > 0 then
+  begin
+    ServiceCadastro.QRY_pessoas.Delete;
+    ShowMessage('Fornecedor deletado com sucesso.');
+    CardPanel_Listas.ActiveCard := card_pesquisa;
+  end;
+end;
+
+procedure TViewFornecedores.btnSalvarClick(Sender: TObject);
+begin //SALVAR
+  inherited;
+  if ServiceCadastro.QRY_pessoas.State in dsEditModes  then
+  begin
+  serviceCadastro.QRY_pessoasPES_TIPOPESSOA.AsInteger := 2;
+  serviceCadastro.QRY_pessoas.Post;
+  ShowMessage('Fornecedor Salvo com Sucesso.');
+  CardPanel_Listas.ActiveCard := card_pesquisa;
+  end;
+end;
+
+procedure TViewFornecedores.FormShow(Sender: TObject);
+begin  //show
+  inherited;
+  get_pessoas(2);
+end;
+
+end.

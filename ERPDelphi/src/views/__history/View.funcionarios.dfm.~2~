@@ -1,0 +1,44 @@
+inherited ViewBaseListas1: TViewBaseListas1
+  Caption = 'ViewBaseListas1'
+  StyleElements = [seFont, seClient, seBorder]
+  PixelsPerInch = 192
+  TextHeight = 32
+  inherited pnlTopo: TPanel
+    StyleElements = [seFont, seClient, seBorder]
+    inherited lblTitulo: TLabel
+      Caption = 'Funcion'#225'rios'
+      StyleElements = [seFont, seClient, seBorder]
+      ExplicitWidth = 215
+    end
+    inherited pnlICone: TPanel
+      StyleElements = [seFont, seClient, seBorder]
+    end
+    inherited pnlFechar: TPanel
+      StyleElements = [seFont, seClient, seBorder]
+    end
+  end
+  inherited pnlRodape: TPanel
+    StyleElements = [seFont, seClient, seBorder]
+  end
+  inherited pnlLinhaFundo: TPanel
+    StyleElements = [seFont, seClient, seBorder]
+    inherited CardPanel_listas: TCardPanel
+      StyleElements = [seFont, seClient, seBorder]
+      inherited card_pesquisa: TCard
+        StyleElements = [seFont, seClient, seBorder]
+        inherited pnlTituloPesquisa: TPanel
+          StyleElements = [seFont, seClient, seBorder]
+          inherited lblTituloPesquisa: TLabel
+            StyleElements = [seFont, seClient, seBorder]
+          end
+          inherited edtPesquisa: TSearchBox
+            StyleElements = [seFont, seClient, seBorder]
+          end
+        end
+      end
+      inherited card_cadastro: TCard
+        StyleElements = [seFont, seClient, seBorder]
+      end
+    end
+  end
+end

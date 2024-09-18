@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/29 22:57:48.000.604,=C:\Users\mucio\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/29 23:01:36.000.831,C:\Users\mucio\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\CursoDelphi\ERPDelphi\src\views\View.principal.pas</Transaction>
+    <Transaction>2024/08/29 23:01:36.000.831,C:\Users\mucio\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\CursoDelphi\ERPDelphi\src\views\View.principal.dfm</Transaction>
+    <Transaction>2024/08/29 23:03:11.000.721,C:\Users\mucio\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\CursoDelphi\ERPDelphi\SistemaPDV.dproj</Transaction>
+    <Transaction>2024/09/01 17:04:36.000.341,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 17:05:36.000.101,C:\CursoDelphi\ERPDelphi\src\services\Service.conexao.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 17:05:36.000.101,C:\CursoDelphi\ERPDelphi\src\services\Service.conexao.dfm=C:\CursoDelphi\ERPDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/09/01 17:42:48.000.479,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 17:43:33.000.697,C:\CursoDelphi\ERPDelphi\src\services\Service.cadastro.dfm=C:\CursoDelphi\ERPDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/09/01 17:43:33.000.697,C:\CursoDelphi\ERPDelphi\src\services\Service.cadastro.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 17:58:40.000.961,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 17:59:27.000.582,C:\CursoDelphi\ERPDelphi\src\providers\Provider.constants.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 18:13:13.000.748,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 18:13:51.000.252,C:\CursoDelphi\ERPDelphi\src\views\View.base.dfm=C:\CursoDelphi\ERPDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/09/01 18:13:51.000.252,C:\CursoDelphi\ERPDelphi\src\views\View.base.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 18:26:42.000.381,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 18:27:46.000.395,C:\CursoDelphi\ERPDelphi\src\views\View.base.listas.dfm=C:\CursoDelphi\ERPDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/09/01 18:27:46.000.395,C:\CursoDelphi\ERPDelphi\src\views\View.base.listas.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 19:40:16.000.779,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 19:40:41.000.940,C:\CursoDelphi\ERPDelphi\src\views\View.clientes.dfm=C:\CursoDelphi\ERPDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/09/01 19:40:41.000.940,C:\CursoDelphi\ERPDelphi\src\views\View.clientes.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/03 21:52:17.000.382,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/03 21:52:55.000.916,C:\CursoDelphi\ERPDelphi\src\views\View.fornecedores.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/03 21:52:55.000.916,C:\CursoDelphi\ERPDelphi\src\views\View.fornecedores.dfm=C:\CursoDelphi\ERPDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/09/05 21:33:58.000.661,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/05 21:34:25.000.266,C:\CursoDelphi\ERPDelphi\Unit1.pas=C:\CursoDelphi\ERPDelphi\src\providers\Provider.conversao.pas</Transaction>
+    <Transaction>2024/09/06 20:54:35.000.174,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/06 20:55:02.000.130,C:\CursoDelphi\ERPDelphi\Unit1.dfm=C:\CursoDelphi\ERPDelphi\src\views\View.produtos.dfm</Transaction>
+    <Transaction>2024/09/06 20:55:02.000.130,C:\CursoDelphi\ERPDelphi\Unit1.pas=C:\CursoDelphi\ERPDelphi\src\views\View.produtos.pas</Transaction>
+    <Transaction>2024/09/10 22:36:41.000.764,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/10 22:37:07.000.399,C:\CursoDelphi\ERPDelphi\src\views\View.funcionarios.dfm=C:\CursoDelphi\ERPDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/09/10 22:37:07.000.399,C:\CursoDelphi\ERPDelphi\src\views\View.funcionarios.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/10 23:14:56.000.812,=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/09/10 23:15:26.000.377,C:\CursoDelphi\ERPDelphi\src\views\View.vendas.dfm=C:\CursoDelphi\ERPDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/09/10 23:15:26.000.377,C:\CursoDelphi\ERPDelphi\src\views\View.vendas.pas=C:\CursoDelphi\ERPDelphi\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

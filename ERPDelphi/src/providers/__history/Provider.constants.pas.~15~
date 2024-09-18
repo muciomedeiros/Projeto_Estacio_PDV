@@ -1,0 +1,54 @@
+unit Provider.constants;
+
+interface
+
+procedure GET_Pessoas(iTIPO: integer);
+procedure GET_Produtos;
+procedure GET_Vendedor(iCOD_VENDEDOR: integer);
+
+var
+  iCOD_FILIAL: integer;
+  sRAZAO_FILIAL : string;
+
+
+implementation
+
+uses
+  Service.cadastro;
+  Provider.conversao;
+
+
+  // procedure para buscar clientes, fornecedores, funcionarios
+procedure GET_Pessoas(iTIPO: integer);
+begin
+  ServiceCadastro.QRY_pessoas.Close;
+  ServiceCadastro.QRY_pessoas.SQL.Clear;
+  ServiceCadastro.QRY_pessoas.SQL.Add('SELECT * FROM pessoas WHERE pes_tipopessoa = :tipopessoa');
+  ServiceCadastro.QRY_pessoas.SQL.Add(' order by pes_codigo desc');
+  ServiceCadastro.QRY_pessoas.Params[0].AsInteger := iTIPO;
+  ServiceCadastro.QRY_pessoas.Open();
+end;
+
+procedure GET_Produtos;
+begin    // busca todos os produtos
+
+  ServiceCadastro.QRY_produto1.Close;
+  ServiceCadastro.QRY_produto1.SQL.Clear;
+  ServiceCadastro.QRY_produto1.SQL.Add('SELECT * FROM produto1 order by pr1_codigo');
+  ServiceCadastro.QRY_produto1.Open();
+
+end;
+
+procedure GET_Vendedor(iCOD_VENDEDOR: integer);
+begin  // buscar vendedor
+
+  ServiceCadastro.QRY_pessoas.Close;
+  ServiceCadastro.QRY_pessoas.SQL.Clear;
+  ServiceCadastro.QRY_pessoas.SQL.Add('SELECT * FROM pessoas where pes_codigo = :codigo and pes_tipopessoa = :tipo');
+  ServiceCadastro.QRY_pessoas.Params[0].AsInteger := iCOD_VENDEDOR;
+  ServiceCadastro.QRY_pessoas.Params[1].AsInteger := 3;
+  ServiceCadastro.QRY_pessoas.Open();
+
+end;
+
+end.

@@ -1,0 +1,43 @@
+object ServiceConexao: TServiceConexao
+  OnCreate = DataModuleCreate
+  Height = 744
+  Width = 931
+  PixelsPerInch = 192
+  object FDConn: TFDConnection
+    Params.Strings = (
+      'Database=C:\DATA_BASE\DB_PDV.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=Localhost'
+      'CharacterSet=WIN1252'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 224
+    Top = 104
+  end
+  object WaitCursor: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 600
+    Top = 104
+  end
+  object FBDriverLink: TFDPhysFBDriverLink
+    Left = 616
+    Top = 272
+  end
+  object QRY_filial: TFDQuery
+    Connection = FDConn
+    SQL.Strings = (
+      'SELECT * FROM filial where fil_codigo = :codigo')
+    Left = 232
+    Top = 288
+    ParamData = <
+      item
+        Name = 'CODIGO'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+end

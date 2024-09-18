@@ -1,0 +1,5 @@
+object ServiceConexao: TServiceConexao
+  Height = 1920
+  Width = 2560
+  PixelsPerInch = 192
+end

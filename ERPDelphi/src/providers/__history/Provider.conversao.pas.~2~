@@ -1,0 +1,26 @@
+unit Provider.conversao;
+
+interface
+
+uses
+  SysUtils,
+  StrUtils,
+  Classes;
+
+type
+  TPCPessoas = (tpCliente, tpFornecedor, tpFuncionario);
+
+  function PessoasToInt(const t: TPCPessoas): integer;
+
+implementation
+
+function PessoasToInt(const t: TPCPessoas): integer;
+begin
+  case t  of
+    tpCliente:               Result := 1 ;
+    tpFornecedor:            Result := 2 ;
+    tpFuncionario:           Result := 3 ;
+  end;
+end;
+
+end.

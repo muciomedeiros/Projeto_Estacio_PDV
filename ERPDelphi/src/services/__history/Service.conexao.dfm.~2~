@@ -1,0 +1,9 @@
+object ServiceConexao: TServiceConexao
+  Height = 1920
+  Width = 2560
+  PixelsPerInch = 192
+  object FDConn: TFDConnection
+    Left = 472
+    Top = 224
+  end
+end
